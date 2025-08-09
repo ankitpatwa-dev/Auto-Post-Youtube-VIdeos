@@ -12,6 +12,7 @@
     """,
     'website':'https://devscodespace.com',
     'author': 'Ankit',
+     'license': 'LGPL-3',
     'depends': ['base', 'mail'],
     'data': [
         'security/ir.model.access.csv',
