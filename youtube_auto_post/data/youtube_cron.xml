@@ -7,8 +7,8 @@
         <field name="code">model._run_scheduled_uploads()</field>
         <field name="interval_number">15</field>
         <field name="interval_type">minutes</field>
-<!--        <field name="numbercall">-1</field>-->
-<!--        <field name="doall">False</field>-->
+        <field name="numbercall">-1</field>
+        <field name="doall">False</field>
         <field name="active">True</field>
     </record>
 </odoo>

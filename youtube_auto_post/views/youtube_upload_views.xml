@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="view_youtube_video_upload_list" model="ir.ui.view">
-        <field name="name">youtube.video.upload.list</field>
+    <record id="view_youtube_video_upload_tree" model="ir.ui.view">
+        <field name="name">youtube.video.upload.tree</field>
         <field name="model">youtube.video.upload</field>
         <field name="arch" type="xml">
-            <list>
+            <tree>
                 <field name="name"/>
                 <field name="state"/>
                 <field name="schedule_date"/>
                 <field name="youtube_video_id"/>
-            </list>
+            </tree>
         </field>
     </record>
 
@@ -29,7 +29,7 @@
                         <field name="tags"/>
                         <field name="category_id"/>
                         <field name="privacy_status"/>
-                         <!-- Upload Binary File -->
+                        <!-- Upload Binary File -->
                         <field name="video_filename" invisible="True"/>
                         <field name="video_upload" filename="video_filename"/>
                         <field name="attachment_id" options="{'no_create': True}" readonly="True" force_save="True"/>
@@ -40,9 +40,13 @@
                         <field name="youtube_video_id" readonly="1"/>
                         <field name="error_message" readonly="1"/>
                     </group>
-                </sheet>
-                <chatter reload_on_post="True"/>
 
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
             </form>
         </field>
     </record>
@@ -50,7 +54,7 @@
     <record id="action_youtube_video_upload" model="ir.actions.act_window">
         <field name="name">YouTube Video Uploads</field>
         <field name="res_model">youtube.video.upload</field>
-        <field name="view_mode">list,form</field>
+        <field name="view_mode">tree,form</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">
                 Schedule and upload videos to YouTube.
