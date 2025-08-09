@@ -13,6 +13,7 @@
     'website':'https://devscodespace.com',
     'author': 'Ankit',
     'depends': ['base', 'mail'],
+     'license': 'LGPL-3',
     'data': [
         'security/ir.model.access.csv',
         'data/youtube_cron.xml',
