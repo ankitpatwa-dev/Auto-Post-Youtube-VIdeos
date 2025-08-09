@@ -12,7 +12,7 @@
     """,
     'website':'https://devscodespace.com',
     'author': 'Ankit',
-    'depends': ['base', 'mail','website'],
+    'depends': ['base', 'mail'],
     'data': [
         'security/ir.model.access.csv',
         'data/youtube_cron.xml',
