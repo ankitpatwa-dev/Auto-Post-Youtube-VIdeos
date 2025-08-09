@@ -13,7 +13,7 @@ The `youtube_auto_post` addon enables Odoo users to schedule and automate video 
 
 ## Prerequisites
 
-- **Odoo Installation**: Odoo 18.
+- **Odoo Installation**: Odoo 16.
 - **Python Environment**: A Python environment with Odoo dependencies installed.
 - **Google Cloud Account**: Required for YouTube Data API access. Sign up at Google Cloud Console.
 - **Video Files**: Videos must be in supported formats (e.g., MP4, MOV, AVI) and stored as attachments in Odoo.
